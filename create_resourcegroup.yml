@@ -1,6 +1,6 @@
 ---
 - name: Create the resource group
-  hosts: all
+  hosts: localhost
   become: true
   tasks:
   - name: Create a resource group
