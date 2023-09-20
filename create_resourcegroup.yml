@@ -4,7 +4,7 @@
   become: true
   tasks:
   - name: Create a resource group
-    azure_rm_resourcegroup:
+    azure.azcollection.azure_rm_resourcegroup:
       name: myResourceGroup
       location: eastus
 
