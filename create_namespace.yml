@@ -1,12 +1,12 @@
 ---
 - hosts: localhost
   vars:
-    namespacens: mynamespacens
+    namespacens: mynamespacens1
     resource_group: myresourcegroup
     location: centralindia
   tasks:
     - name: Create the namespace
-      azure.azcollection.azure_rm_resource:
+      azure.azcollection.azure_rm_servicebus:
         resource_group: "{{ resource_group }}"
-        resource_name: "{{ namespacens }}"
-        resource_type: namespace
+        name: "{{ namespacens }}"
+        location: "{{ location }}"
