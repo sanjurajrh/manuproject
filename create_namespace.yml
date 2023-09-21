@@ -4,6 +4,7 @@
     namespacens: mynamespacens1
     resource_group: myresourcegroup
     location: centralindia
+    subscription: 537a29e1-2d93-4240-a320-42099bade9cb
   tasks:
     - name: Create the namespace
       azure.azcollection.azure_rm_servicebus:
